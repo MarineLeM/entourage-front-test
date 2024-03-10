@@ -11,4 +11,4 @@ Currently working with node version 20.11.1
 
 * in src\styles\variables.css there is the css main variables
 
-* i used guest session to create watching list, and i store the guest session id inside the localStorage and the store ( i create a hook to get the id every where in the application)
+* i used guest session to create watching list, and i stored the guest session id inside the localStorage and the store ( I created a hook to get the id every where in the application)
