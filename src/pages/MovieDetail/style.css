@@ -1,0 +1,21 @@
+.movieDetail_page{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+  grid-template-areas: 'poster title'
+                       'poster info';
+}
+
+.movieDetail_poster{
+  grid-area: poster;
+}
+
+.movieDetail_title{
+  grid-area: title;
+}
+
+.movieDetail_description{
+  grid-area: info;
+}
