@@ -2,7 +2,7 @@ import { Movie } from "../../services/movie/types";
 
 //  UPDATE MOVIES REDUCER
 interface SetMovies {
-  type: 'SET_POPULAR_MOVIES' | 'ADD_MOVIES';
+  type: 'SET_POPULAR_MOVIES' | 'ADD_MOVIES' | 'SET_WATCHING_MOVIES' | 'ADD_WATCHING_MOVIES';
   payload: Movie[];
 }
 
@@ -14,6 +14,16 @@ export const setPopularMovies = (movies: Movie[]): SetMovies  => ({
 export const addMovies = (movies: Movie[]): SetMovies  => ({
   type: 'ADD_MOVIES',
   payload: movies,
+});
+
+export const setWatchingMovies = (movies: Movie[]): SetMovies  => ({
+  type: 'SET_WATCHING_MOVIES',
+  payload: movies,
+});
+
+export const addWatchingMovie = (movie: Movie[]): SetMovies  => ({
+  type: 'ADD_WATCHING_MOVIES',
+  payload: movie,
 });
 
 //  LOADING MOVIES REDUCER

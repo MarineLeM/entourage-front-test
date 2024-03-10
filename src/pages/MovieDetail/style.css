@@ -1,12 +1,13 @@
 .movieDetail_page{
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto 1fr;
   grid-template-rows: auto 1fr auto;
   column-gap: 50px;
   row-gap: 20px;
-  grid-template-areas: 'poster title'
-                       'poster info'
-                       'similar similar';
+  grid-template-areas: 'poster title title'
+                       'poster info info'
+                       'poster addWatchlist .'
+                       'similar similar similar';
 }
 
 .movieDetail_poster{
@@ -25,3 +26,6 @@
   grid-area: similar;
 }
 
+.movieDetail_addWatchlist{
+  grid-area: addWatchlist;
+}

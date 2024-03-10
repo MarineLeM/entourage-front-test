@@ -11,6 +11,9 @@ export const Header = () => {
         <Button component={Link} to="/movies">
           Acceuil
         </Button>
+        <Button component={Link} to="/watching-list">
+          Votre liste
+        </Button>
       </Toolbar>
     </AppBar>
   );

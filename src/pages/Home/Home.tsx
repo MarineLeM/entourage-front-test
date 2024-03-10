@@ -17,7 +17,7 @@ export const Home = () => {
   const loading = useSelector(isMoviesLoading);
   
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchPopularMovies = async () => {
       try {
         dispatch<MovieAction>(setMoviesLoading(true));
         const movies = await movieService.getPopularMovies();
@@ -29,8 +29,8 @@ export const Home = () => {
       }
     };
 
-    if (!popularMovies || popularMovies.length === 0) {
-      fetchData();
+    if (popularMovies.length === 0) {
+      fetchPopularMovies();
     }
   }, [dispatch, popularMovies]);
 

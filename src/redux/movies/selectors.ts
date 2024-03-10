@@ -1,6 +1,7 @@
 import { RootState } from "../rootReducer";
 
 export const selectPopularMovies = (state: RootState) => state.movies.popularList;
+export const selectWhatchingMovies = (state: RootState) => state.movies.watchingList;
 export const isMoviesLoading = (state: RootState) => state.movies.loading;
 
 export const selectMovieDetailsById = (movieId: number) => (state: RootState) => {
