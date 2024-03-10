@@ -1,11 +1,12 @@
 .movieDetail_page{
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   column-gap: 50px;
   row-gap: 20px;
   grid-template-areas: 'poster title'
-                       'poster info';
+                       'poster info'
+                       'similar similar';
 }
 
 .movieDetail_poster{
@@ -19,3 +20,8 @@
 .movieDetail_description{
   grid-area: info;
 }
+
+.movieDetail_similarList{
+  grid-area: similar;
+}
+
